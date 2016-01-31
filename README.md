@@ -16,7 +16,7 @@ placed automatically via the program.
 python H2OAlgorithmicTrading.py
 python StandardAlgorithmicTrading.py
 
-#### Assumptions:
+##### Assumptions:
 1) h2o python modules installed (see Referenced at the bottom of the page)
 
 2) write permission on /tmp/ folder and write permission on current working folder 
@@ -27,9 +27,9 @@ python StandardAlgorithmicTrading.py
 
 5) if one wants to point to local / remote h2O server, then comment out h2O.init() and uncomment h2O.init(ip=..,port=...)
 
-### Performance of H2OGeneralizedLinearEstimator(family = "gaussian")
+#### Performance of H2OGeneralizedLinearEstimator(family = "gaussian")
 
-#### Algorithm Metrics:
+##### Algorithm Metrics:
 Dataset:
 Link : https://drive.google.com/file/d/0ByhSuUifwO07bms4NmFNNjVwbTQ/view
 Symbol : IBM
@@ -45,7 +45,7 @@ Null deviance: 0.269232404456
 Residual deviance: 0.281343837775
 AIC: -989.851898711
 
-#### Trading Results:
+##### Trading Results:
 Initial Portfolio Value: 100000
 Data Range: 2008-01-01 to 2009-12-31
 
@@ -63,13 +63,13 @@ Average Daily Return of SPY: -0.000189476626317
 
 Final Portfolio Value: 333673.0
 
-### Performance of standard numpy Linear Regression Classifier - np.linalg.lstsq(dataX, dataY)
+#### Performance of standard numpy Linear Regression Classifier - np.linalg.lstsq(dataX, dataY)
 
 The main observation is variation of predictions from actual value considerably high and as a result the particular trading strategy does not work for this standard algorithm very well.
 
 Strong prediction automatically bossts up the Trading as the decision to but / sell is based on a threshold on the difference between actual and predicted values. Definitely we can make this strtagey more robust.  
 
-#### Algorithm Metrics:
+##### Algorithm Metrics:
 In sample results
 RMSE:  0.0371178709308
 corr:  0.499644155508
@@ -78,7 +78,7 @@ Out of sample results
 RMSE:  0.0199253542973
 corr:  0.488509112306
 
-#### Trading Results:
+##### Trading Results:
 Initial Portfolio Value: 100000
 Data Range: 2008-01-01 to 2009-12-31
 
