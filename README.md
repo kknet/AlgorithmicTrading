@@ -98,10 +98,12 @@ Final Portfolio Value: -371258.0
 
 ### Issues:
 1. we shouldn't save intermediate results into files, rather should upload into h2o server and download from it
-2. 
+2. the plots and images are not getting rendered due to OSX issues so commented out time being
+3. file permission issues with IPython , once we interact with h2O cloud for dat atransfer, this problem will go away.
 
 ### Scope of Improvement:
 1. use cross-validations / bagging along with Lin Regression and check if performance further improves.
+2. create IPython Notebook
 
 ### References:
 
