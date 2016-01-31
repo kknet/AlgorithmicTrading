@@ -4,12 +4,11 @@ Select a supervised algorithm that can predict stock prices of historical data b
 i.e. statistical indicators - like Volatility, Bollinger Bands etc.
 > H2OAlgorithmicTrading.py
 
-Accordingly formulate a trading strategy based on predicted values to generate orders on same historical training set to backtest 
-how much portfolio would have increased.
+Accordingly formulate a trading strategy (based on predicted values) in order to generate orders dynamically (on same historical training set for backtesting) and observe the gain / loss in overall portfolio.
 > tradingSimulator.py , orderGeneraor.py
 
-Select the combination of Machine learning algorithm and Trading strategy to maximize gain for future orders,
-placed automatically via the program.
+Once we are satisfied with the results , we are ready to run the same program for 'real-time trades'
+FInally, we nned to select the combination of Machine learning algorithm and Trading strategy to maximize gain for future orders.
 
 ### Run the Application:
 
