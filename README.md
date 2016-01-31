@@ -1,4 +1,5 @@
 # Algorithmic Trading
+### Goal:
 Select a supervised algorithm that can predict stock prices of historical data based on the predictors 
 i.e. statistical indicators - like Volatility, Bollinger Bands etc.
 > H2OAlgorithmicTrading.py
@@ -10,7 +11,7 @@ how much portfolio would have increased.
 Select the combination of Machine learning algorithm and Trading strategy to maximize gain for future orders,
 placed automatically via the program.
 
-# Run the Application
+### Run the Application:
 
 python H2OAlgorithmicTrading.py
 python StandardAlgorithmicTrading.py
