@@ -24,6 +24,8 @@ python StandardAlgorithmicTrading.py
 
 4) will work only in python 2.7
 
+5) if one wants to point to local / remote h2O server, then comment out h2O.init() and uncomment h2O.init(ip=..,port=...)
+
 ### Performance of H2OGeneralizedLinearEstimator(family = "gaussian")
 
 #### Algorithm Metrics:
@@ -92,6 +94,13 @@ Average Daily Return of Fund: -0.0221127948848
 Average Daily Return of SPY: -0.000189476626317
 
 Final Portfolio Value: -371258.0
+
+### Issues:
+1. we shouldn't save intermediate results into files, rather should upload into h2o server and download from it
+2. 
+
+### Scope of Improvement:
+1. use cross-validations / bagging along with Lin Regression and check if performance further improves.
 
 ### References:
 
