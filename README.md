@@ -15,9 +15,14 @@ placed automatically via the program.
 python H2OAlgorithmicTrading.py
 python StandardAlgorithmicTrading.py
 
-Assumptions:
--- 1) write permission on /tmp/ folder and write permission on current working folder 
---- 2) faced problems downloading files from H2O server and converting pd frames from/into H2O frames
+#### Assumptions:
+1) h2o python modules installed (see Referenced at the bottom of the page)
+
+2) write permission on /tmp/ folder and write permission on current working folder 
+
+3) faced problems downloading files from H2O server and converting pd frames from/into H2O frames
+
+4) will work only in python 2.7
 
 ### Performance of H2OGeneralizedLinearEstimator(family = "gaussian")
 
@@ -55,7 +60,7 @@ Average Daily Return of SPY: -0.000189476626317
 
 Final Portfolio Value: 333673.0
 
-### Performance of numpy standard Linear Regression Classifier - np.linalg.lstsq(dataX, dataY)
+### Performance of standard numpy Linear Regression Classifier - np.linalg.lstsq(dataX, dataY)
 
 The main observation is variation of predictions from actual value considerably high and as a result the particular trading strategy does not work for this standard algorithm very well.
 
@@ -87,3 +92,17 @@ Average Daily Return of Fund: -0.0221127948848
 Average Daily Return of SPY: -0.000189476626317
 
 Final Portfolio Value: -371258.0
+
+### References:
+
+H2O Quick Setup and Demo - https://h2o-release.s3.amazonaws.com/h2o/rel-tibshirani/8/docs-website/h2o-docs/booklets/Python_booklet.pdf
+
+Generalized Linear Modelling with H2O - http://h2o-release.s3.amazonaws.com/h2o/rel-slater/8/docs-website/h2o-docs/booklets/GLM_Vignette.pdf
+
+Useful COde reference - http://h2o-release.s3.amazonaws.com/h2o/master/3340/docs-website/h2o-py/docs/intro.html
+
+Demos : https://github.com/h2oai/h2o-3/tree/master/h2o-py/demos
+
+Algo Syntax and Semantics - http://docs.h2o.ai/h2oclassic/datascience/glm.html
+
+API docs - http://h2o-release.s3.amazonaws.com/h2o/master/3065/docs-website/h2o-py/docs/frame.html
