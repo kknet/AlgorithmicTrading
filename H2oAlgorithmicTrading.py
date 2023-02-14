@@ -16,7 +16,8 @@ if __name__=="__main__":
 
     #h2OServer = h2o.init(ip="10.0.0.218",port="54321")
     h2o.init()
-    SYMBOL = 'IBM'
+    #SYMBOL = 'IBM'
+    SYMBOL = 'APPLE'
     train_data , price_array, price_df1 = helper.getData([SYMBOL], pd.date_range('2008-01-01', '2009-12-31'))
     test_data  , price_array, price_df2 = helper.getData([SYMBOL], pd.date_range('2010-01-01', '2010-12-31'))
 
