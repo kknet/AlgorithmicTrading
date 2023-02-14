@@ -1,4 +1,4 @@
-__author__ = 'kmanda1'
+__author__ = 'kknet'
 
 import numpy as np
 import pandas as pd
