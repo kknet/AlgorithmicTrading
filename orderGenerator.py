@@ -6,6 +6,7 @@ import numpy as np
 def generateOrders(price_df, symbol, predY):
 
     print "******** Generate Orders based on Normalized Predictions:"
+    print "******** start"
 
     #ax = plt.plot(price_array)
     ax = price_df[symbol].plot(title="Trading Strategies", label=symbol)
