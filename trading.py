@@ -1,5 +1,5 @@
 """
-Test a learner.  (c) 2015 Tucker Balch
+Test a learner.  (c) 2023 Tucker Balch
 """
 
 import numpy as np
