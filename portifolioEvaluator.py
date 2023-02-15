@@ -146,6 +146,26 @@ def get_portfolio_value(prices, allocs, start_val=1):
 
     return port_val
 
+def get_portfolio_value2(prices, allocs, start_val=1):
+    """Compute daily portfolio value given stock prices, allocations and starting value.
+
+    Parameters
+    ----------
+        prices: daily prices for each stock in portfolio
+        allocs: initial allocations, as fractions that sum to 1
+        start_val: total starting value invested in portfolio (default: 1)
+
+    Returns
+    -------
+        port_val: daily portfolio value
+    """
+    normed_vals = prices / prices.ix[0]
+    allocated_vals = normed_vals*allocs
+    pos_val = allocated_vals*start_val
+    port_val = pos_val.sum(axis=1)
+
+    return port_val
+
 def get_portfolio_stats(port_val, daily_rf=0, samples_per_year=252):
     """Calculate statistics on given portfolio values.
 
