@@ -5,6 +5,9 @@ import pandas as pd
 def Volatility(prices):
     return pd.rolling_std(prices, window=20)
 
+def Volatility2(prices):
+    return pd.rolling_std(prices, window=10)
+
 def Momentum(prices):
     momentum = (prices/prices.shift(-20))-1
     return momentum
